@@ -39,7 +39,7 @@
     
     blackView.center= movedPoint;
     
-    NSLog(@"★座標%@を移動中", NSStringfromCGPoint(movedPoint));
+    NSLog(@"★座標%@を移動中", NSStringFromCGPoint(movedPoint));
     
     [sender setTranslation:CGPointZero inView:self.view];
     
