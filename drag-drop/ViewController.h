@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIGestureRecognizerDelegate>{
+    UIView *blackView;
+}
+
+-(void)panAction:(UIPanGestureRecognizer *)sender;
 
 @end
