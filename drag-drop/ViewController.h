@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController<UIGestureRecognizerDelegate>{
+    
+    IBOutlet UIView *redview, *blueview;
+    
+    IBOutlet UIView *resuleLabel;
+    
     UIView *blackView;
 }
 

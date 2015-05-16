@@ -45,6 +45,16 @@
     
     if (sender.state== UIGestureRecognizerStateEnded) {
         NSLog(@"移動終了");
+        
+        if (CGRectContainsPoint(redview.frame, blackView.center)) {
+            resuleLabel.text=@"赤と重なりました";
+        }else if (CGRectContainsPoint(redview.frame, blackView.center)){
+            resuleLabel.text=@"青と重なりました";
+        }else{
+            resuleLabel.text=@"重なっていません";
+        }
+    }else{
+        resuleLabel.text=@"移動中";
     }
 }
 
